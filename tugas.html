@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> SOAL 1</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+        h1{
+            font-size: 16px;
+            font-weight: lighter;
+            margin-left: 320px;
+            display: flex;
+            
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            font-weight: lighter;
+
+            display: grid;
+
+            grid-template-columns:350px 400px;
+            grid-template-rows:130px 500px 130px;
+        }
+        .header{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border: 1px solid black;
+            border-top: 0px;
+        }
+        h2{
+            padding-top: 10px;
+            justify-content: center;
+            align-items: top;
+            display: flex;
+        }
+        h2{
+            font-size: medium;
+        }
+        h3{
+            padding-top: 10px;
+            justify-content: center;
+            align-items: top;
+            display: flex;
+            font-size: medium
+        }
+        p{
+            
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: medium;
+        }
+        .gambar{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: span 2;
+            border: 1px solid black;
+            border-left: 0px;
+        }
+        .link{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            border: 1px solid black;
+            border-top: 0px;
+        }
+        .button{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .linked{ 
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 16;
+            font-weight: lighter;
+        }
+        .gambar1{
+            display: grid;
+
+            grid-template-columns:repeat(7,57px);
+            grid-template-rows:repeat(7,57px);
+            gap: 1px;
+        }
+        .atas{
+            grid-column-start: 4;
+            grid-column-end: 6;
+
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: blue;
+        }
+        .tengah1{
+            grid-column-start: 3;
+            grid-column-end: 5;
+
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: blue;
+        }
+        .tengah1_2{
+    
+            grid-column-start: 6;
+            grid-column-end: 7;
+
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: blue;
+        }
+        .tengah2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: blue;
+        }
+        .tengah2_3{
+            grid-column-start: 5;
+            grid-column-end: 6;
+
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: blue;
+        }
+        .tengah3{
+            grid-column-start: 4;
+            grid-column-end: 5;
+
+            grid-row-start: 4;
+            grid-row-end: 6;
+            background-color: blue;
+        }
+        .bawah{
+            grid-column-start: 2;
+            grid-column-end: 7;
+
+            grid-row-start: 6;
+            grid-row-end: 7;
+            background-color: blue;
+        }
+    
+    </style>
+    </head>
+
+    <body>
+        <h1>
+            HTML
+        </h1>
+        <div class="container">
+            <div class="header">
+                [1301204423 - Novaldi Ramadhan Waluyo]
+            </div>
+            <div class="form">
+                <h2>
+                    <u>SOAL 1 : FORM</u>
+                </h2> 
+                <form>
+                    <ul>
+                        <li><b>Prodi: <ol>
+                            <li>
+                                <input type="radio" name="Prodi" value="PR"> IF<br>
+                            </li>
+                            <li>
+                                <input type="radio" name="Prodi" value="PR"> SE<br>
+                            </li>
+                            <li>
+                                <input type="radio" name="Prodi" value="PR"> IT<br>
+                            </li>
+                        </ol></b></li>
+                        
+                        <li><b>Developer Type: <ol>
+                            <li>
+                                Frontend<input type="checkbox" name="DeveloperType" value="DT">
+                            </li>
+                            <li>
+                                Backend<input type="checkbox" name="DeveloperType" value="DT">
+                            </li>
+                        </ol></b></li>
+                    </ul>
+                    <div class="button">
+                        <input type="reset" value="clear">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="gambar">
+                <h3>
+                    <u>SOAL 2 : TABLE</u>
+                </h3>
+                <div class="gambar1">
+                    <div class="atas"></div>
+                    <div class="tengah1"></div>
+                    <div class="tengah1_2"></div>
+                    <div class="tengah2"></div>
+                    <div class="tengah2_3"></div>
+                    <div class="tengah3"></div>
+                    <div class="bawah"></div>
+                </div>
+            </div>
+
+            <div class="link">
+            <h4>
+                <p>
+                    <u>SOAL 3 : LINK</u> 
+                    <br><br>
+                    <div class="linked">
+                        <a href="www.google.com">GO TO TITLE</a>
+                    </div>
+                    
+                </p>
+                
+            </h4>
+            
+            </div>
+
+        </div>
+    </body>
+</html>
